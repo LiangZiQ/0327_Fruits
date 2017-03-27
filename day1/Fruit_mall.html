@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="Font-Awesome-master/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Fruit_mall.css">
+    <title>Title</title>
+</head>
+<body>
+<!--html5-->
+<!--头部-->
+<header>
+    <!--头部黑色导航栏-->
+    <div class="tips_box hidden-xs">
+        <div class="container">
+            <div class="pull-left">
+                <span>
+                    Welcome visitor you can
+                    <a href="">Login</a>
+                    or
+                    <a href="">Create an account</a>
+                </span>
+            </div>
+            <div class="col-lg-3 pull-right"><!--pull-right:右浮动-->
+                <div class="dropdown">
+                    <a href="" data-toggle="dropdown">
+                        <span><img src="imges/a.jpg" alt=""></span>
+                        ENGLISH
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><span><img src="imges/a.jpg" alt=""></span> English</li>
+                        <li><span><img src="imges/b.jpg" alt=""></span> Français</li>
+                        <li><span><img src="imges/c.jpg" alt=""></span> Italiano</li>
+                        <li><span><img src="imges/d.jpg" alt=""></span> Español</li>
+                        <li><span><img src="imges/e.jpg" alt=""></span> Persian</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--头部白色部分-->
+    <div class="main_head_box">
+        <div class="container">
+            <div class="col-lg-3 logo_box">
+                <img src="imges/logo.png" alt="">
+            </div>
+            <div class="col-lg-9 p_left_right_0">
+                <div class="up_head_box">
+                    <!--头部白色导航栏-->
+                    <ul class="list-inline">
+                        <!--  首页-->
+                        <li>
+                            <a href="">HOME</a>
+                        </li>
+                        <!--如果有二级菜单，需加上dropdown类-->
+                        <!--2 SNACKS-->
+                        <li class="dropdown" hover="1">
+                            <!--按钮-->
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                SNACKS
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <!-- 二级菜单：dropdown-menu -->
+                            <ul class="dropdown-menu second-menu">
+                                <li>LINK HTML</li>
+                                <li>PRODUCT NEW</li>
+                                <li>PRODUCTS SPECIAL</li>
+                            </ul>
+                        </li>
+                        <!--3 FRUIT -->
+                        <li class="dropdown"hover="1" >
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                FRUIT
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-lg-6">LINK HTML</div>
+                                    <div class="col-lg-6">LINK HTML</div>
+                                    <div class="col-lg-6">LINK HTML</div>
+                                    <div class="col-lg-6">VIDEO WIDGET</div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--4***IMPORTED FOOD-->
+                        <li class="dropdown"hover="1" >
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                IMPORTED FOOD
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <!--5 BEVERAGE-->
+                        <li class="dropdown"hover="1" >
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                BEVERAGE
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <!--6  SPECIALTY DELI-->
+                        <li class="dropdown"hover="1" >
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                SPECIALTY DELI
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <!--7    CONTACT-->
+                        <li class="dropdown"hover="1" >
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                CONTACT
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="down_head_box">
+                    <div class="col-lg-8">
+                        <form action="">
+                            <div class="form-group search_box">
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-primary btn-fruit-topic">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 cart_box pull-right">
+                        <img src="imges/bg_cart.png" alt="">
+                        <span class="title-cart">My Cart</span>
+                        <span class="ajax_cart_no_product">0 item</span>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <!--第一屏-->
+    <div class="row index_first_box">
+        <!-- 第一屏 ：左中右结构-->
+        <!--左边下拉栏-->
+        <div class="col-lg-3">
+            <!--选项栏标题-->
+            <div class="cate_tips_box">
+                <i class="fa fa-bars"></i>&nbsp&nbsp
+                VERTICAL MEGAMENU
+            </div>
+            <!--选项列表-->
+            <div class="cate_content_box">
+                <ul class="cate_box">
+                    <!--第一个选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/book.png" alt="">
+                            Select Market
+                            <i class="fa fa-angle-right pull-right"></i>
+                        </a>
+                        <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                    </li>
+                    <!--第二行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/game.png" alt="">
+                            Select Market
+                            <i class="fa fa-angle-right pull-right"></i>
+                        </a>
+                        <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                    </li>
+                    <!--第三行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/clothing.png" alt="">
+                            Select Market
+                            <i class="fa fa-angle-right pull-right"></i>
+                        </a>
+                        <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                    </li>
+                    <!--第四行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/beauty.png" alt="">
+                            Select Market
+                            <i class="fa fa-angle-right pull-right"></i>
+                        </a>
+                        <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                    </li>
+                    <!--第五行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/mobile.png" alt="">
+                            Select Market
+                            <i class="fa fa-angle-right pull-right"></i>
+                        </a>
+                        <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                    </li>
+                    <!--第六行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/sport.png" alt="">
+                            Select Market
+                            <i class="fa fa-angle-right pull-right"></i>
+                        </a>
+                        <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                    </li>
+                    <!--第七行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/kid.png" alt="">
+                            INFANT TOYS
+                        </a>
+                    </li>
+                    <!--第八行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/food.png" alt="">
+                            FOOD
+                        </a>
+                    </li>
+                    <!--第九行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/sport.png" alt="">
+                            Electrical Life
+                        </a>
+                    </li>
+                    <!--第十行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/book.png" alt="">
+                            FURNITURE
+                        </a>
+                    </li>
+                    <!--第十一行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/mobile.png" alt="">
+                            JEWELRY
+                        </a>
+                    </li>
+                    <!--第十二行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/clothing.png" alt="">
+                            Accessories - Supplies
+                        </a>
+                    </li>
+                    <!--第十三行选项-->
+                    <li class="dropdown">
+                        <a href=""data-toggle="dropdown">
+                            <img src="imges/kid.png" alt="">
+                            HEALTH CARE
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--中间部分-->
+        <div class="col-lg-6 first_center_box p_left_right_0">
+            <div class="banner_box ">
+                <!-- 放幻灯片的容器 -->
+                <!-- Bootstrap ：第一种触发式-声明式 -->
+                <div id="slidershow" class="carousel slide" data-ride="carousel">
+                    <!-- 幻灯片的内容容器：   每一个幻灯片需加上：item  -->
+                    <div class="carousel-inner">
+                        <img class="item active" src="imges/slide_01.jpg" alt="">
+                        <img class="item" src="imges/slide_02.jpg" alt="">
+                        <img class="item" src="imges/slide_03.jpg" alt="">
+                    </div>
+                    <!-- 显示幻灯片数量的容器 -->
+                    <ul class="carousel-indicators">
+                        <li data-slide-to="0" class="active" data-target="#slidershow"></li>
+                        <li data-slide-to="1" data-target="#slidershow"></li>
+                        <li data-slide-to="2" data-target="#slidershow"></li>
+                    </ul>
+                    <!-- 左右按钮 -->
+                    <div class="carousel-control left" href="#slidershow" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </div>
+                    <div class="carousel-control right" href="#slidershow" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </div>
+                </div>
+            </div>
+            <!--热销商品-->
+            <div class="best_seller_box">
+                <div class="best_tips_box">BEST SELLER</div>
+                <!-- carousel组件 -->
+                <div id="goods_slide_box" class="best_goods_list carousel" data-ride="carousel">
+                    <!-- 左右切换控件 -->
+                    <div class="carousel">
+                        <div class="carousel-control left" href="#goods_slide_box" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                        <div class="carousel-control right" href="#goods_slide_box" data-slide="prev">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="carousel-inner bg-white_color">
+                        <!-- 第一屏的商品 -->
+                        <ul class="item active row">
+                            <li class="col-lg-4">
+                                <div class="product-block">
+                                    <div class="product-container">
+                                        <div class="product-meta">
+                                            <h6>Lorem ipsum dolor</h6>
+                                            <div class="star-content">
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="product-price">$67.00</span>
+                                        </div>
+                                        <div class="product-imge-container imge">
+                                            <img src="imges/289-home_default.jpg" alt=""class="imagess">
+                                            <div class="wrap-hover">
+                                                <div class="quickviev">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="wishlist">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="compare">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="add_cart_masker">
+                                                    <div class="add_cart_btn" title="Add to cart" data-toggle="tooltip">ADD TO CART</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4">
+                                <div class="product-block">
+                                    <div class="product-container">
+                                        <div class="product-meta">
+                                            <h6>Lorem ipsum dolor</h6>
+                                            <div class="star-content">
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="product-price">$67.00</span>
+                                        </div>
+                                        <div class="product-imge-container imge">
+                                            <img src="imges/289-home_default.jpg" alt="" class="imagess">
+                                            <div class="wrap-hover">
+                                                <div class="quickviev">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="wishlist">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="compare">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="add_cart_masker">
+                                                    <div class="add_cart_btn" title="Add to cart" data-toggle="tooltip">ADD TO CART</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4">
+                                <div class="product-block">
+                                    <div class="product-container">
+                                        <div class="product-meta">
+                                            <h6>Lorem ipsum dolor</h6>
+                                            <div class="star-content">
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+                                            <span class="product-price">$67.00</span>
+                                        </div>
+                                        <div class="product-imge-container imge">
+                                            <img src="imges/289-home_default.jpg" alt="" class="imagess">
+                                            <div class="wrap-hover">
+                                                <div class="quickviev">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="wishlist">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="compare">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="add_cart_masker">
+                                                    <div class="add_cart_btn" title="Add to cart" data-toggle="tooltip">ADD TO CART</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--第二屏的商品-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右边广告图片-->
+        <div class="col-lg-3 adv_box">
+            <div class="up_adv_box">
+                <img src="imges/banner-slideshow01.jpg" class="img-responsive">
+            </div>
+            <div class="down_adv_box">
+                <img src="imges/banner-slideshow02.jpg" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 下拉菜单组件，第一步 -->
+<script src="js/jquery-1.11.1.js"></script>
+<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

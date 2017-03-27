@@ -1,0 +1,52 @@
+/*公共样式*/
+.left_goods_box [class*='col']{
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*具体样式*/
+@media (max-width: 720px) {
+    .hidden-xs{
+        display: none;
+    }
+}
+.left_goods_box,.right_goods_box{
+    border: 1px solid salmon;
+    height: 616px;
+    padding: 0;
+    margin: 0;
+}
+.left_goods_box .up_box
+{
+    background:#f8694d ;
+    color: white;
+    position: relative;
+    height: 80px;
+}
+.left_goods_box .up_title{
+    padding: 22px 0px 15px 15px;
+}
+.left_goods_box .up_box h4{
+    display: inline-block;
+}
+.left_goods_box .up_box .left-ctrl{
+    float: right;
+    right: 20px;
+    width: 46px;
+    height: 20px;
+    margin-right: 25px;
+    margin-top: 7px;
+}
+.left_goods_box .up_box .left-ctrl a{
+    border: 1px solid #fff;
+    width: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 0px 4px;
+}

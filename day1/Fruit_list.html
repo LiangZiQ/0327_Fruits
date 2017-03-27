@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="Font-Awesome-master/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Fruit_mall.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <!--头部黑色导航栏-->
+    <div class="tips_box hidden-xs">
+        <div class="container">
+            <div class="pull-left">
+                <span>
+                    Welcome visitor you can
+                    <a href="">Login</a>
+                    or
+                    <a href="">Create an account</a>
+                </span>
+            </div>
+            <div class="col-lg-3 pull-right"><!--pull-right:右浮动-->
+                <div class="dropdown">
+                    <a href="" data-toggle="dropdown">
+                        <span><img src="imges/a.jpg" alt=""></span>
+                        ENGLISH
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><span><img src="imges/a.jpg" alt=""></span> English</li>
+                        <li><span><img src="imges/b.jpg" alt=""></span> Français</li>
+                        <li><span><img src="imges/c.jpg" alt=""></span> Italiano</li>
+                        <li><span><img src="imges/d.jpg" alt=""></span> Español</li>
+                        <li><span><img src="imges/e.jpg" alt=""></span> Persian</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--头部白色部分-->
+    <div class="main_head_box">
+        <div class="container">
+            <div class="col-lg-3 logo_box">
+                <img src="imges/logo.png" alt="">
+            </div>
+            <div class="col-lg-9 p_left_right_0">
+                <div class="up_head_box">
+                    <!--头部白色导航栏-->
+                    <ul class="list-inline">
+                        <!--  首页-->
+                        <li>
+                            <a href="">HOME</a>
+                        </li>
+                        <!--如果有二级菜单，需加上dropdown类-->
+                        <!--2 SNACKS-->
+                        <li class="dropdown" hover="1">
+                            <!--按钮-->
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                SNACKS
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <!-- 二级菜单：dropdown-menu -->
+                            <ul class="dropdown-menu second-menu">
+                                <li>LINK HTML</li>
+                                <li>PRODUCT NEW</li>
+                                <li>PRODUCTS SPECIAL</li>
+                            </ul>
+                        </li>
+                        <!--3 FRUIT -->
+                        <li class="dropdown"hover="1" >
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                FRUIT
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-lg-6">LINK HTML</div>
+                                    <div class="col-lg-6">LINK HTML</div>
+                                    <div class="col-lg-6">LINK HTML</div>
+                                    <div class="col-lg-6">VIDEO WIDGET</div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--4***IMPORTED FOOD-->
+                        <li class="dropdown"hover="1" >
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                IMPORTED FOOD
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <!--5 BEVERAGE-->
+                        <li class="dropdown"hover="1" >
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                BEVERAGE
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <!--6  SPECIALTY DELI-->
+                        <li class="dropdown"hover="1" >
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                SPECIALTY DELI
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <!--7    CONTACT-->
+                        <li class="dropdown"hover="1" >
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                CONTACT
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="down_head_box">
+                    <div class="col-lg-8">
+                        <form action="">
+                            <div class="form-group search_box">
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-primary btn-fruit-topic">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 cart_box pull-right">
+                        <img src="imges/bg_cart.png" alt="">
+                        <span class="title-cart">My Cart</span>
+                        <span class="ajax_cart_no_product">0 item</span>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!--内容部分-->
+<section id="colums" class="offcanvas-siderbars">
+    <!--管道导航-->
+    <div id="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb clearfix">
+                <a href="" class="home">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                     Home
+                </a>
+                <span class="slash"></span>
+                Delicious Snacks
+                <h4 class="page-heading product-listing">
+                    Delicious Snacks&nbsp;
+                    <span class="heading-counter">There are 7 products.</span>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="container main-content">
+        <div class="row">
+            <!--左边的·-->
+            <div class="col-lg-3 sidebar column" id="left_column">
+                <!--第一模块-->
+                <div id="categories_block_left" class="block block-highlighted nopading">
+                    <div class="cate_tips_box">
+                        <i class="fa fa-bars"></i>&nbsp&nbsp
+                        VERTICAL MEGAMENU
+                    </div>
+                    <!--选项列表-->
+                    <div class="cate_content_box">
+                        <ul class="cate_box">
+                            <!--第一个选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/book.png" alt="">
+                                    Select Market
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                                <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                            </li>
+                            <!--第二行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/game.png" alt="">
+                                    Select Market
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                                <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                            </li>
+                            <!--第三行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/clothing.png" alt="">
+                                    Select Market
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                                <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                            </li>
+                            <!--第四行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/beauty.png" alt="">
+                                    Select Market
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                                <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                            </li>
+                            <!--第五行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/mobile.png" alt="">
+                                    Select Market
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                                <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                            </li>
+                            <!--第六行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/sport.png" alt="">
+                                    Select Market
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                                <div class="dropdown-menu">PRODUCTS SPECIAL</div>
+                            </li>
+                            <!--第七行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/kid.png" alt="">
+                                    INFANT TOYS
+                                </a>
+                            </li>
+                            <!--第八行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/food.png" alt="">
+                                    FOOD
+                                </a>
+                            </li>
+                            <!--第九行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/sport.png" alt="">
+                                    Electrical Life
+                                </a>
+                            </li>
+                            <!--第十行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/book.png" alt="">
+                                    FURNITURE
+                                </a>
+                            </li>
+                            <!--第十一行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/mobile.png" alt="">
+                                    JEWELRY
+                                </a>
+                            </li>
+                            <!--第十二行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/clothing.png" alt="">
+                                    Accessories - Supplies
+                                </a>
+                            </li>
+                            <!--第十三行选项-->
+                            <li class="dropdown">
+                                <a href=""data-toggle="dropdown">
+                                    <img src="imges/kid.png" alt="">
+                                    HEALTH CARE
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--第二模块-->
+                <div id="layered_block_left" class="block">
+                    <h4 class="title_block">
+                        <span>Catalog</span>
+                    </h4>
+                    <div class="block_content">
+                        <form action="#" id="layered_form">
+                            <div>
+                                <div class="layered_filter">
+                                    <div class="layered_subtitle_heading">
+                                        <span class="layered_subtitle">Categories</span>
+                                    </div>
+                                    <ul id="ul_layered_category_0" class="col-lg-12 layered_filter_ul">
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_category_29" id="layered_category_29" value="29">
+                                            <label for="layered_category_29">
+                                                <a href="" data-rel="nofollow">Trends<span> (7)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_category_32" id="layered_category_32" value="32">
+                                            <label for="layered_category_32">
+                                                <a href="" data-rel="nofollow">Casual Outfits<span> (6)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_category_30" id="layered_category_30" value="30">
+                                            <label for="layered_category_30">
+                                                <a href="" data-rel="nofollow">Street Style<span> (6)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_category_60" id="layered_category_60" value="60">
+                                            <label for="layered_category_60">
+                                                <a href="" data-rel="nofollow">Designer<span> (4)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_category_31" id="layered_category_31" value="31">
+                                            <label for="layered_category_31">
+                                                <a href="" data-rel="nofollow">Dresses<span> (6)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_category_12" id="layered_category_12" value="12">
+                                            <label for="layered_category_12">
+                                                <a href="" data-rel="nofollow">Accessories<span> (7)</span></a>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="layered_filter">
+                                    <div class="layered_subtitle_heading">
+                                        <span class="layered_subtitle">Availability</span>
+                                    </div>
+                                    <ul id="ul_layered_quantity_0" class="col-lg-12 layered_filter_ul">
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_quantity_1" id="layered_quantity_1" value="1">
+                                            <label for="layered_quantity_1">
+                                                <a href="" data-rel="nofollow">In stock<span> (7)</span></a>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="layered_filter">
+                                    <div class="layered_subtitle_heading">
+                                        <span class="layered_subtitle">Condition</span>
+                                    </div>
+                                    <ul id="ul_layered_condition_0" class="col-lg-12 layered_filter_ul">
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_condition_new" id="layered_condition_new" value="new">
+                                            <label for="layered_condition_new">
+                                                <a href="" data-rel="nofollow">New<span> (4)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_condition_refurbished" id="layered_condition_refurbished" value="refurbished">
+                                            <label for="layered_condition_refurbished">
+                                                <a href="" data-rel="nofollow">Refurbished<span> (3)</span></a>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="layered_filter">
+                                    <div class="layered_subtitle_heading">
+                                        <span class="layered_subtitle">Manufacturer</span>
+                                    </div>
+                                    <ul id="ul_layered_manufacturer_0" class="col-lg-12 layered_filter_ul">
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_manufacturer_3" id="layered_manufacturer_3" value="3">
+                                            <label for="layered_manufacturer_3">
+                                                <a href="" data-rel="nofollow">Manufac 2<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_manufacturer_2" id="layered_manufacturer_2" value="2">
+                                            <label for="layered_manufacturer_2">
+                                                <a href="" data-rel="nofollow">Manufac1<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_manufacturer_4" id="layered_manufacturer_4" value="4">
+                                            <label for="layered_manufacturer_4">
+                                                <a href="" data-rel="nofollow">Manufac3<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_manufacturer_5" id="layered_manufacturer_5" value="5">
+                                            <label for="layered_manufacturer_5">
+                                                <a href="" data-rel="nofollow">Manufac4<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_manufacturer_6" id="layered_manufacturer_6" value="6">
+                                            <label for="layered_manufacturer_6">
+                                                <a href="" data-rel="nofollow">Manufac5<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_manufacturer_7" id="layered_manufacturer_7" value="7">
+                                            <label for="layered_manufacturer_7">
+                                                <a href="" data-rel="nofollow">Manufac6<span> (2)</span></a>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="layered_price" style="">
+                                    <div class="layered_subtitle_heading">
+                                        <span class="layered_subtitle">Price</span>
+                                    </div>
+                                    <ul id="ul_layered_price_0" class="col-lg-12 layered_filter_ul">
+                                        <li>
+                                            <label for="price">
+                                                Range:
+                                            </label>
+                                            <span id="layered_price_range">$22.00 - $160.00</span>
+                                            <div class="layered_slider_container">
+                                                <div class="layered_slider" id="layered_price_slider" data-type="price" data-format="1" data-unit="$" aria-disabled="false">
+                                                        <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;">
+
+                                                        </div>
+                                                        <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+                                                        <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 100%;"></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="layered_filter">
+                                    <div class="layered_subtitle_heading">
+                                        <span class="layered_subtitle">Size</span>
+                                    </div>
+                                    <ul id="ul_layered_id_attribute_group_1" class="col-lg-12 layered_filter_ul">
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_attribute_group_1" id="layered_id_attribute_group_1" value="1_1">
+                                            <label for="layered_id_attribute_group_1">
+                                                <a href="">S<span> (3)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_attribute_group_2" id="layered_id_attribute_group_2" value="2_1">
+                                            <label for="layered_id_attribute_group_2">
+                                                <a href="">M<span> (5)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_attribute_group_3" id="layered_id_attribute_group_3" value="3_1">
+                                            <label for="layered_id_attribute_group_3">
+                                                <a href="">L<span> (6)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_attribute_group_4" id="layered_id_attribute_group_4" value="4_1">
+                                            <label for="layered_id_attribute_group_4">
+                                                <a href="">One size<span> (3)</span></a>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="layered_filter">
+                                    <div class="layered_subtitle_heading">
+                                        <span class="layered_subtitle">Color</span>
+                                    </div>
+                                    <ul id="ul_layered_id_attribute_group_3" class="col-lg-12 layered_filter_ul color-group">
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input class="color-option  " type="button" name="layered_id_attribute_group_6" data-rel="6_3" id="layered_id_attribute_group_6" style="background: #CFC4A6;">
+                                            <label for="layered_id_attribute_group_6" name="layered_id_attribute_group_6" class="layered_color" data-rel="6_3">
+                                                <a href="">Taupe<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input class="color-option  " type="button" name="layered_id_attribute_group_7" data-rel="7_3" id="layered_id_attribute_group_7" style="background: #f5f5dc;">
+                                            <label for="layered_id_attribute_group_7" name="layered_id_attribute_group_7" class="layered_color" data-rel="7_3">
+                                                <a href="">Beige<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input class="color-option  " type="button" name="layered_id_attribute_group_8" data-rel="8_3" id="layered_id_attribute_group_8" style="background: #ffffff;">
+                                            <label for="layered_id_attribute_group_8" name="layered_id_attribute_group_8" class="layered_color" data-rel="8_3">
+                                                <a href="">White<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input class="color-option  " type="button" name="layered_id_attribute_group_10" data-rel="10_3" id="layered_id_attribute_group_10" style="background: #E84C3D;">
+                                            <label for="layered_id_attribute_group_10" name="layered_id_attribute_group_10" class="layered_color" data-rel="10_3">
+                                                <a href="">Red<span> (2)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input class="color-option  " type="button" name="layered_id_attribute_group_11" data-rel="11_3" id="layered_id_attribute_group_11" style="background: #434A54;">
+                                            <label for="layered_id_attribute_group_11" name="layered_id_attribute_group_11" class="layered_color" data-rel="11_3">
+                                                <a href="">Black<span> (2)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input class="color-option  " type="button" name="layered_id_attribute_group_12" data-rel="12_3" id="layered_id_attribute_group_12" style="background: #C19A6B;">
+                                            <label for="layered_id_attribute_group_12" name="layered_id_attribute_group_12" class="layered_color" data-rel="12_3">
+                                                <a href="">Camel<span> (4)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input class="color-option  " type="button" name="layered_id_attribute_group_13" data-rel="13_3" id="layered_id_attribute_group_13" style="background: #F39C11;">
+                                            <label for="layered_id_attribute_group_13" name="layered_id_attribute_group_13" class="layered_color" data-rel="13_3">
+                                                <a href="">Orange<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input class="color-option  " type="button" name="layered_id_attribute_group_14" data-rel="14_3" id="layered_id_attribute_group_14" style="background: #5D9CEC;">
+                                            <label for="layered_id_attribute_group_14" name="layered_id_attribute_group_14" class="layered_color" data-rel="14_3">
+                                                <a href="">Blue<span> (2)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input class="color-option  " type="button" name="layered_id_attribute_group_17" data-rel="17_3" id="layered_id_attribute_group_17" style="background: #964B00;">
+                                            <label for="layered_id_attribute_group_17" name="layered_id_attribute_group_17" class="layered_color" data-rel="17_3">
+                                                <a href="">Brown<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input class="color-option  " type="button" name="layered_id_attribute_group_24" data-rel="24_3" id="layered_id_attribute_group_24" style="background: #FCCACD;">
+                                            <label for="layered_id_attribute_group_24" name="layered_id_attribute_group_24" class="layered_color" data-rel="24_3">
+                                                <a href="">Pink<span> (3)</span></a>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="layered_filter">
+                                    <div class="layered_subtitle_heading">
+                                        <span class="layered_subtitle">Compositions</span>
+                                    </div>
+                                    <ul id="ul_layered_id_feature_5" class="col-lg-12 layered_filter_ul">
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_5" id="layered_id_feature_5" value="5_5">
+                                            <label for="layered_id_feature_5">
+                                                <a href="">Cotton<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_4" id="layered_id_feature_4" value="4_5">
+                                            <label for="layered_id_feature_4">
+                                                <a href="">Elastane<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_1" id="layered_id_feature_1" value="1_5">
+                                            <label for="layered_id_feature_1">
+                                                <a href="">Polyester<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_8" id="layered_id_feature_8" value="8_5">
+                                            <label for="layered_id_feature_8">
+                                                <a href="">Straw<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_7" id="layered_id_feature_7" value="7_5">
+                                            <label for="layered_id_feature_7">
+                                                <a href="">Suede<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_3" id="layered_id_feature_3" value="3_5">
+                                            <label for="layered_id_feature_3">
+                                                <a href="">Viscose<span> (2)</span></a>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="layered_filter">
+                                    <div class="layered_subtitle_heading">
+                                        <span class="layered_subtitle">Styles</span>
+                                    </div>
+                                    <ul id="ul_layered_id_feature_6" class="col-lg-12 layered_filter_ul">
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_15" id="layered_id_feature_15" value="15_6">
+                                            <label for="layered_id_feature_15">
+                                                <a href="">Basic<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_10" id="layered_id_feature_10" value="10_6">
+                                            <label for="layered_id_feature_10">
+                                                <a href="">Classic<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_16" id="layered_id_feature_16" value="16_6">
+                                            <label for="layered_id_feature_16">
+                                                <a href="">Dressy<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_13" id="layered_id_feature_13" value="13_6">
+                                            <label for="layered_id_feature_13">
+                                                <a href="">Girly<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_12" id="layered_id_feature_12" value="12_6">
+                                            <label for="layered_id_feature_12">
+                                                <a href="">Military<span> (2)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_14" id="layered_id_feature_14" value="14_6">
+                                            <label for="layered_id_feature_14">
+                                                <a href="">Rock<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="layered_filter">
+                                    <div class="layered_subtitle_heading">
+                                        <span class="layered_subtitle">Properties</span>
+                                    </div>
+                                    <ul id="ul_layered_id_feature_7" class="col-lg-12 layered_filter_ul">
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_18" id="layered_id_feature_18" value="18_7">
+                                            <label for="layered_id_feature_18">
+                                                <a href="">Colorful Dress<span> (4)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_20" id="layered_id_feature_20" value="20_7">
+                                            <label for="layered_id_feature_20">
+                                                <a href="">Midi Dress<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_19" id="layered_id_feature_19" value="19_7">
+                                            <label for="layered_id_feature_19">
+                                                <a href="">Short Dress<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                        <li class="nomargin hiddable col-lg-12">
+                                            <input type="checkbox" class="checkbox" name="layered_id_feature_17" id="layered_id_feature_17" value="17_7">
+                                            <label for="layered_id_feature_17">
+                                                <a href="">Short Sleeve<span> (1)</span></a>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--第三模块-->
+                <div id="viewed-products_block_left" class="block products_block nopadding">
+                    <h4 class="title_block"><span>Viewed products</span></h4>
+                    <div class="block_content" style="">
+                        <ul class="products products-block list-block">
+                            <li class="clearfix media">
+                                <div class="product-block">
+                                    <div class="product-container">
+                                        <a class="products-block-image img pull-left" href="" title="Curabitur tristique lorem">
+                                            <img class="replace-2x img-responsive" src="img/312-small_default.jpg" alt="Curabitur tristique lorem">
+                                        </a>
+                                        <div class="media-body">
+                                            <div class="product-content">
+                                                <h3 class="name media-heading">
+                                                    <a class="product-name" href="" title="Curabitur tristique lorem">
+                                                        Curabitur tristique lorem</a>
+                                                </h3>
+                                                <div class="comments_note product-rating">
+                                                    <div class="star_content">
+                                                        <i class="fa fa-star sta" aria-hidden="true"></i>
+                                                        <i class="fa fa-star sta" aria-hidden="true"></i>
+                                                        <i class="fa fa-star sta" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clearfix media">
+                                <div class="product-block">
+                                    <div class="product-container">
+                                        <a class="products-block-image img pull-left" href="" title="Curabitur ultricies">
+                                            <img class="replace-2x img-responsive" src="img/361-small_default.jpg" alt="Curabitur ultricies">
+                                        </a>
+                                        <div class="media-body">
+                                            <div class="product-content">
+                                                <h3 class="name media-heading">
+                                                    <a class="product-name" href="" title="Curabitur ultricies">
+                                                        Curabitur ultricies</a></h3>
+                                                <div class="comments_note product-rating">
+                                                    <div class="star_content">
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--第四模块-->
+                <div id="ptsstaticontent_left" class="block ">
+                    <ul class="staticontent-home clearfix">
+                        <li class="staticontent-item-1 staticontent-item col-lg-12 col-md-12 col-sm-12 hidden-xs">
+                            <div class="image-banner ">
+                                <img src="img/banner_left.jpg" class="item-img" alt="">
+                            </div>
+                        </li>
+                        <li class="staticontent-item-2 staticontent-item col-lg-12 col-md-12 col-sm-12 hidden-xs nopadding">
+                           <div class="image-banner ">
+                               <img src="img/banner_left02.jpg" class="item-img" alt="">
+                           </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--右边的-->
+            <div id="center_column" class="center_column col-lg-9">
+                <div id="content" class="row">
+                    <!--图片-->
+                    <div class="content_scene_cat">
+                        <img src="img/15-category_default.jpg" alt="">
+                    </div>
+                    <!--段落-->
+                    <div class="category-info">
+                        <p>Integer velit mauris, dictum quis pellentesque quis, faucibus ultricies magna. Quisque aliquet, sapien ac porta pharetra, lectus nunc imperdiet nulla, ullamcorper sodales nibh lorem vitae nisl. Proin ornare lobortis nunc at tempor. Suspendisse ac est et lorem accumsan fringilla</p>
+                    </div>
+                    <div id="subcategories">
+                        <div class="subcategory-heading pull-left">Subcategories :</div>
+                        <ul class="links">
+                            <li><a href="">Trends</a></li>
+                            <li><a href="">Casual Outfits</a></li>
+                            <li><a href="">Street Style</a></li>
+                            <li><a href="">Designer</a></li>
+                            <li><a href="">Dresses</a></li>
+                            <li><a href="">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="content_sortPagiBar bg">
+                        <div class="row">
+                            <div class="sortPagiBar col-lg-9">
+                                <ul class="display hidden-xs">
+                                    <span class="pull-left">View</span>
+                                    <li id="grid" class="selected">
+                                        <a href="">
+                                            <i class="fa fa-th-large"></i>
+                                        </a>
+                                    </li>
+                                    <li id="list">
+                                        <a href="">
+                                            <i class="fa fa-th-list"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <form action="" id="productsSortForm" class="productsSortForm">
+                                    <div class="select selectorl">
+                                        <span>Sort by</span>
+                                        <select id="selectProductSort" class="selectProductSort form-control">
+                                            <option value="position:asc" selected="selected">--</option>
+                                            <option value="price:asc">Price: Lowest first</option>
+                                            <option value="price:desc">Price: Highest first</option>
+                                            <option value="name:asc">Product Name: A to Z</option>
+                                            <option value="name:desc">Product Name: Z to A</option>
+                                            <option value="reference:asc">Reference: Lowest first</option>
+                                            <option value="reference:desc">Reference: Highest first</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-3">
+                                <form action="" method="post" class="compare-form">
+                                    <button type="submit" class="btn btn-default bt_compare" disabled="disabled">
+                                        <span>Compare (<strong class="total-compare-val">0</strong>)</span>
+                                    </button>
+                                </form>
+                            </div>
+                            <ul class="product-list product-block gird row">
+                                <li class="col-lg-3"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

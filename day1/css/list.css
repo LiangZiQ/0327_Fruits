@@ -1,0 +1,230 @@
+/*公共样式*/
+.bg{
+    background-color: white;
+}
+/*首屏标题栏*/
+#breadcrumb{
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 30px;
+}
+.breadcrumb{
+    min-height: 80px;
+    margin-bottom: 0;
+    color: black;
+}
+.breadcrumb a{
+    color: #999;
+    text-decoration: none;
+}
+.breadcrumb a:hover{
+    color: #000;
+}
+.breadcrumb .slash{
+    line-height: 1.1;
+    padding: 0 20px 0 10px;
+}
+.breadcrumb .slash:before{
+    content: "/";
+    font-family: "FontAwesome";
+    position: absolute;
+    margin: 0 auto;
+    color: #999999;
+    font-size: 15px;
+}
+.breadcrumb h4{
+    text-transform: uppercase;
+}
+.breadcrumb .heading-counter{
+    font: normal 12px/22px "Hind", sans-serif;
+    text-transform: none;
+    font-style: italic;
+    display: inline-block;
+    float: right;
+}
+/*内容选项左边部分*/
+.sidebar .block{
+    margin-bottom: 18px;
+    position: relative;
+}
+/*红色部分*/
+.sidebar .block .title_block {
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Hind", sans-serif;
+    padding: 15px 0 15px 25px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    background: #f8694d;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0;
+}
+/*下面选项部分*/
+.sidebar .block_content {
+    border-top: none;
+    padding: 10px 20px 20px;
+    background-color: white;
+}
+.sidebar .layered_filter{
+    overflow: hidden;
+}
+.sidebar .checkbox{
+    display: inline;
+}
+.sidebar .layered_filter_ul{
+    padding: 5px 0;
+    margin-left: -11px;
+}
+.sidebar .layered_filter{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    width: 100%;
+}
+.sidebar .layered_price{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.sidebar .layered_filter .color-option
+{
+    height: 15px;
+}
+.sidebar .layered_filter_ul .nomargin a{
+    color: black;
+    font-size: 10px;
+    display: inline;
+
+}
+.sidebar .layered_filter_ul .nomargin a:hover{
+    text-decoration: none;
+    color: #f8694d;
+}
+#layered_block_left .layered_subtitle {
+    display: inline-block;
+    font-weight: bold;
+}
+.product-name{
+    font-size: 13px;
+    color: black;
+}
+.clearfix{
+    margin-left: -30px;
+}
+#ptsstaticontent_left{
+    margin-left: -26px;
+}
+#ptsstaticontent_left ul > li .image-banner {
+    margin-bottom: 30px;
+}
+.star_content i{
+    color: #c6c6c6;
+}
+.star_content .sta{
+     color: #ffcc66;
+ }
+/*右边部分*/
+.center_column .content_scene_cat{
+    line-height: 20px;
+    margin: 0 0 15px 0;
+    clear: both;
+}
+.center_column .category-info {
+    margin-bottom: 30px;
+    padding: 0 25px;
+}
+.center_column .category-info p{
+    margin: 0 0 9px;
+}
+#subcategories {
+    padding: 20px;
+    background: white;
+}
+#subcategories .subcategory-heading {
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    color: black;
+    text-transform: uppercase;
+    margin: 6px 15px 0 0;
+    font-size: 14px;
+    line-height: normal;
+}
+#subcategories .links {
+    margin-top: 7px;
+    font-size: 12px;
+}
+#subcategories .links li{
+    display: inline;
+    line-height: normal;
+    position: relative;
+}
+#subcategories .links li:before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 45%;
+    left: 0;
+    background-color: #171717;
+}
+#subcategories .links li a{
+    margin-right: 25px;
+    padding-left: 10px;
+    color: #666;
+}
+#subcategories .links li a:hover{
+    color: #f8694d;
+}
+.content_sortPagiBar {
+    padding: 6px 15px;
+    font-size: 13px;
+    color: #666666;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.content_sortPagiBar .display {
+    float: left;
+    line-height: 30px;
+}
+.content_sortPagiBar .display span{
+    margin-right: 6px;
+}
+.content_sortPagiBar .display li{
+    float: left;
+    display: block;
+}
+.content_sortPagiBar .display li.selected a {
+    color: black;
+}
+.content_sortPagiBar .display a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    border: 1px solid #dddddd;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    background: #FFF;
+    color: #dbdbdb;
+}
+.content_sortPagiBar #productsSortForm {
+    float: right;
+}
+.content_sortPagiBar .form-control {
+    border-radius: 0px;
+    display: inline;
+    width: auto;
+}
+.content_sortPagiBar .bt_compare {
+    cursor: pointer;
+    background-color: #333;
+    color: #f1f1f1;
+    float: right;
+    line-height: 30px;
+    padding: 0 15px;
+}
+.content_sortPagiBar .product_list {
+    background: white;
+    margin: 0;
+}
